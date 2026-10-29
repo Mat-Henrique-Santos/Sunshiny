@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#140d24">
+  <meta name="description" content="Uma homenagem celestial de 2 anos de canal para a VTuber BySunshiny — onde o anjo é fofo, o humor é quebrado e o carinho é infinito.">
+  <title>BySunshiny ✦ 2 Anos de Caos Celestial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="in-menu-page">
+  <!-- Áudio oficial de entrada (You Are My Sunshine) -->
+  <audio id="bg-music" src="assets/you-are-my-sunshine.mp3" autoplay loop preload="auto"></audio>
+
+  <!-- Fundo estrelado em camadas e partículas celestiais -->
+  <div class="stars" aria-hidden="true"></div>
+  <div class="twinkles" aria-hidden="true"></div>
+  <div id="particle-layer" class="particle-layer" aria-hidden="true"></div>
+
+  <!-- =====================================================================
+       PÁGINA 1: MENU DE ENTRADA & PORTÕES DO PARAÍSO (ANIMAÇÃO 3D)
+       ===================================================================== -->
+  <section id="gate-menu-page" class="gate-menu-page" aria-label="Menu de Entrada — Portões do Paraíso">
+    <!-- Topo da Página 1 (Menu) -->
+    <div class="gate-topbar">
+      <div class="gate-corner-brand">
+        <span>☼ Sunshiny</span>
+        <small>2 anos de canal ♡</small>
+      </div>
+
+      <nav class="gate-quick-nav" aria-label="Atalhos do menu">
+        <button type="button" class="gate-nav-link" data-target="#inicio">✦ O Início</button>
+        <button type="button" class="gate-nav-link" data-target="#caos">✦ O Caos</button>
+        <button type="button" class="gate-nav-link" data-target="#universo">✦ O Universo</button>
+        <button type="button" class="gate-nav-link" data-target="#carta">✦ A Carta</button>
+        <button type="button" class="gate-nav-link" data-target="#bencao">✦ A Bênção</button>
+      </nav>
+
+      <button
+        type="button"
+        class="music-mute-btn"
+        id="gate-mute-toggle"
+        aria-pressed="false"
+        title="Silenciar ou ativar a música de fundo"
+      >
+        <span class="music-icon" aria-hidden="true">🔊</span>
+        <span class="music-label-text">Música: ON</span>
+      </button>
+    </div>
+
+    <!-- Luz divina que brilha quando os portões se abrem -->
+    <div class="heaven-light-beam" id="heaven-light-beam" aria-hidden="true"></div>
+
+    <!-- Cena 3D dos Portões do Paraíso -->
+    <div class="gates-stage" id="gates-stage" aria-hidden="true">
+      <!-- Pilar Esquerdo + Folha Esquerda do Portão -->
+      <div class="gate-pillar pillar-left"></div>
+      <div class="heaven-gate gate-left">
+        <div class="gate-arch"></div>
+        <div class="gate-bars">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="gate-ornament">✧ ☼ ✧</div>
+        <div class="gate-lock-half lock-left">☼</div>
+      </div>
+
+      <!-- Folha Direita do Portão + Pilar Direito -->
+      <div class="heaven-gate gate-right">
+        <div class="gate-arch"></div>
+        <div class="gate-bars">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="gate-ornament">✧ ☼ ✧</div>
+        <div class="gate-lock-half lock-right">☼</div>
+      </div>
+      <div class="gate-pillar pillar-right"></div>
+    </div>
+
+    <!-- Conteúdo Central do Menu (Página 1) -->
+    <div class="gate-menu-content" id="gate-menu-content">
+      <div class="gate-hero-grid">
+        <div class="gate-text-box">
+          <p class="gate-kicker">✦ UMA PEQUENA HOMENAGEM PARA UM GRANDE ANJINHO... ✦</p>
+          <h1 class="gate-title">
+            <span class="gate-title-sun" aria-hidden="true">☼</span>
+            BySunshiny
+          </h1>
+          <p class="gate-badge">2 ANOS DE CANAL • CAOS CELESTIAL</p>
+          <p class="gate-desc">
+            Dois anos iluminando nossas telas, abençoando nossas timelines
+            e destruindo a estabilidade mental de todos os presentes.
+          </p>
+
+          <button type="button" class="open-gates-btn" id="open-gates-btn">
+            <span class="btn-star">★</span>
+            Abrir os portões do paraíso
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nuvens celestiais na base e bilhete de aviso -->
+    <div class="gate-clouds" aria-hidden="true"></div>
+    <div class="gate-warning-note">
+      Prepare-se...<br>
+      O caos celestial está prestes a começar... ☼
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       PÁGINA 2: PÁGINA INICIAL COMPLETA (REVELADA APÓS ABRIR OS PORTÕES)
+       ===================================================================== -->
+  <div id="main-site-page" class="main-site-page" hidden>
+    <!-- Barra de navegação fixa inspirada no universo celestial + Carrd -->
+    <header class="topbar">
+      <a class="brand" href="#inicio">
+        <span class="brand-sun" aria-hidden="true">☼</span>
+        <span class="brand-text">
+          BYSUNSHINY
+          <small>✦ 2 ANOS DE CAOS CELESTIAL ✦</small>
+        </span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <a href="#inicio">O Início</a>
+        <a href="#caos">O Caos</a>
+        <a href="#universo">O Universo</a>
+        <a href="#carta">A Carta</a>
+        <a href="#bencao">A Bênção</a>
+      </nav>
+
+      <div class="topbar-controls">
+        <button
+          type="button"
+          class="back-to-gates-btn"
+          id="back-to-gates-btn"
+          title="Voltar para o Menu dos Portões do Paraíso"
+        >
+          🚪 Portões
+        </button>
+
+        <!-- Botão de Silenciar / Ativar Música no topo -->
+        <button
+          type="button"
+          class="music-mute-btn"
+          id="mute-toggle"
+          aria-pressed="false"
+          title="Silenciar ou ativar a música de fundo"
+        >
+          <span class="music-icon" id="mute-icon" aria-hidden="true">🔊</span>
+          <span class="music-label-text" id="mute-label">Música: ON</span>
+        </button>
+
+        <div class="topbar-status" title="Status celestial da streamer">
+          <span class="status-dot"></span>
+          <span>@Bysunshiny • online</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO / BOAS-VINDAS AO PARAÍSO ================= -->
+      <section class="hero" id="inicio">
+        <div class="halo halo-a" aria-hidden="true"></div>
+        <div class="halo halo-b" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <!-- Barra superior estilo janela do Carrd -->
+          <div class="carrd-greeting">
+            <span class="greeting-close" aria-hidden="true">✕</span>
+            <span class="greeting-pill">★ Prazer em te conhecer, humano.</span>
+            <span class="greeting-icons" aria-hidden="true">♡ ✦ ☰</span>
+          </div>
+
+          <p class="eyebrow">✦ PORTÕES ABERTOS • BEM-VINDO AO PARAÍSO DA SUNSHINY ✦</p>
+          <h1>
+            ★ Olá, <em>anjinho!</em><br>
+            <span class="highlight-pink">2 Anos de Luz &amp; Caos</span>
+          </h1>
+
+          <p class="lead">
+            Você acaba de entrar em um lugar especial... Aqui celebramos 2 anos de uma pessoa
+            incrível, que transformou a internet em um lugar mais leve, engraçado e cheio de luz.
+            Se prepare, porque essa jornada vai ser tão caótica quanto as lives da BySunshiny!
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#caos">
+              ★ Vamos começar o caos? <span>↓</span>
+            </a>
+            <a class="button ghost" href="#carta">
+              Ler a cartinha da comunidade ♡
+            </a>
+          </div>
+
+          <!-- Mini player sincronizado com a música "You Are My Sunshine" -->
+          <div class="now-playing" role="region" aria-label="Tocando agora">
+            <button type="button" class="play-toggle" id="play-sunshine" aria-label="Pausar ou tocar música">
+              ❚❚
+            </button>
+            <div class="np-info">
+              <div class="np-title">
+                <strong>Now playing:</strong> You Are My Sunshine ☼
+              </div>
+              <div class="np-bar">
+                <span class="np-time" id="np-current">0:00</span>
+                <div class="np-track" id="np-track" title="Clique para avançar na música">
+                  <div class="np-fill" id="np-fill"></div>
+                </div>
+                <span class="np-time" id="np-duration">0:10</span>
+              </div>
+            </div>
+            <button type="button" class="np-mute-mini" id="np-mute-mini" title="Silenciar / Ativar som">
+              🔊
+            </button>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Modelo 3D Original da VTuber + Card Sistema de Anjinho -->
+        <div class="hero-visual">
+          <div class="angel-card" aria-label="Modelo 3D oficial da VTuber BySunshiny">
+            <div class="card-stars" aria-hidden="true">✦　·　✧　☼　✧　·　✦</div>
+
+            <!-- Moldura com o Modelo 3D Original em PNG transparente -->
+            <div class="vtuber-portrait-frame">
+              <img
+                src="assets/sunshiny-vtuber.png"
+                alt="Modelo 3D original da VTuber BySunshiny com auréola dourada, mechas rosa e brancas, asinhas pretas e roupa com recorte de coração"
+                class="vtuber-portrait-img"
+              >
+            </div>
+
+            <div class="angel-caption">
+              ANJINHA STREAMER CERTIFICADA<br>
+              <strong>HUMOR DUVIDOSO &amp; LIVES CAÓTICAS</strong>
+            </div>
+
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+          </div>
+
+          <!-- Card Flutuante: SISTEMA DE ANJINHO (das referências visuais) -->
+          <aside class="system-card" aria-label="Diagnóstico do Sistema de Anjinho">
+            <p class="system-title">☼ SISTEMA DE ANJINHO</p>
+            <ul class="system-list">
+              <li><span>✔ Fofura:</span> <strong>100%</strong></li>
+              <li><span>✔ Caos:</span> <strong>100%</strong></li>
+              <li><span>✔ Bom humor:</span> <strong>100%</strong></li>
+              <li><span>✔ Sanidade:</span> <strong class="glitch-text">???</strong></li>
+            </ul>
+            <div class="system-warning">
+              ⚠️ ERRO: NÍVEL DE CAOS ACIMA DO LIMITE PERMITIDO.
+            </div>
+          </aside>
+        </div>
+
+        <a class="scroll-hint" href="#caos">
+          DESLIZE PARA EXPLORAR OS ARQUIVOS DO CÉU <span>↓</span>
+        </a>
+      </section>
+
+      <!-- ================= O CAOS CELESTIAL (HUMOR QUEBRADO) ================= -->
+      <section class="section chaos" id="caos">
+        <div class="section-heading">
+          <p class="eyebrow">✦ ARQUIVOS CONFIDENCIAIS DO PARAÍSO ✦</p>
+          <h2>O Caos Celestial</h2>
+          <p class="subtitle">
+            Onde o anjo é fofo, mas o humor é quebrado.<br>
+            Aqui estão alguns registros oficiais (e não tão oficiais) dos nossos 2 anos com a BySunshiny:
+          </p>
+        </div>
+
+        <div class="cards">
+          <!-- CARD 1: Departamento de Assuntos Celestiais -->
+          <article class="chaos-card card-verdict">
+            <div class="card-pin" aria-hidden="true">✦</div>
+            <p class="card-kicker">ARQUIVO Nº 001 • TRIBUNAL DO CÉU</p>
+            <h3>Departamento de Assuntos Celestiais</h3>
+            <p>
+              <strong>Denúncia recebida:</strong> uma anjinha está causando danos psicológicos
+              irreversíveis (e ataques de riso) por meio de transmissões ao vivo.
+            </p>
+            <div class="verdict-box">
+              <p><strong>Veredito:</strong> Culpada.</p>
+              <p><strong>Pena:</strong> Continuar fazendo lives por mais 200 anos.</p>
+            </div>
+
+            <div class="card-actions">
+              <button type="button" class="mini-button" id="stamp-btn">
+                Bater o martelo celestial ⚖️
+              </button>
+              <span class="culpada-stamp" id="culpada-stamp" aria-live="polite">
+                CULPADA
+              </span>
+            </div>
+            <p class="reveal" id="stamp-message" hidden></p>
+          </article>
+
+          <!-- CARD 2: Relatório de Sanidade da Comunidade (Vaticano: Sim / KSKSK) -->
+          <article class="chaos-card card-sanity">
+            <div class="card-pin" aria-hidden="true">☼</div>
+            <p class="card-kicker">ARQUIVO Nº 002 • DIAGNÓSTICO MÉDICO</p>
+            <h3>Relatório de Sanidade da Comunidade</h3>
+
+            <div class="sanity-meter">
+              <div class="meter-row">
+                <span>Sanidade antes de conhecer a BySunshiny:</span>
+                <strong>87%</strong>
+              </div>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 87%"></div>
+              </div>
+
+              <div class="meter-row">
+                <span>Sanidade depois de conhecer a BySunshiny:</span>
+                <strong class="error-code">arquivo não encontrado.</strong>
+              </div>
+              <div class="meter-bar broken">
+                <div class="meter-fill" style="width: 12%"></div>
+              </div>
+            </div>
+
+            <p class="vatican-prompt">
+              Deseja enviar relatório de erro para o Vaticano?
+            </p>
+            <div class="vatican-buttons">
+              <button type="button" class="vatican-btn" data-vatican="sim">
+                Sim
+              </button>
+              <button type="button" class="vatican-btn ksksk" data-vatican="ksksk">
+                KSKSK
+              </button>
+              <button type="button" class="vatican-btn" data-vatican="nao">
+                Não
+              </button>
+            </div>
+            <p class="reveal" id="vatican-response" aria-live="polite" hidden></p>
+          </article>
+
+          <!-- CARD 3: Mandamentos da Comunidade -->
+          <article class="chaos-card card-commandments">
+            <div class="card-pin" aria-hidden="true">♡</div>
+            <p class="card-kicker">ARQUIVO Nº 003 • DOUTRINA SOLAR</p>
+            <h3>Mandamentos da Comunidade</h3>
+            <ol class="commandments-list">
+              <li>Amarás o anjinho sobre todas as coisas.</li>
+              <li>Não questionarás o humor quebrado apresentado em live.</li>
+              <li>Aceitarás que o chat perdeu a sanidade há muito tempo.</li>
+              <li>Honrarás os memes, mesmo aqueles que não deveriam existir.</li>
+              <li>Celebrarás os dois anos de caos celestial!</li>
+            </ol>
+            <button
+              type="button"
+              class="mini-button"
+              data-reveal="Juramento registrado nos arquivos celestiais! Regra bônus nº 6: Nunca confiar quando o chat diz &quot;tenho uma ideia&quot;."
+            >
+              Assinar termo de adesão ✦
+            </button>
+            <p class="reveal" hidden></p>
+          </article>
+        </div>
+
+        <!-- Diálogo icônico do Chat + Pérolas da Live -->
+        <div class="chat-pearl-wrapper">
+          <div class="chat-dialogue" aria-label="Pérola do chat em live">
+            <div class="chat-line">
+              <span class="chat-badge">★ Chat:</span>
+              <span>Você é real? ❤️</span>
+            </div>
+            <div class="chat-line sunshiny-reply">
+              <span class="chat-badge sun">☼ BySunshiny:</span>
+              <span>Não. Eu sou um conceito. 😎</span>
+            </div>
+          </div>
+
+          <div class="chaos-quote-pill">
+            <span class="quote-bubble">“eu não sou normal...”</span>
+            <span class="quote-answer">✦ Mas é exatamente isso que te torna tão especial pra nós! ♡</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DOS GAMES AOS REACTS + CARRD (!gosto / !não gosto) ================= -->
+      <section class="section universe" id="universo">
+        <div class="section-heading">
+          <p class="eyebrow">✦ DIRETO DO CARRD &amp; DAS LIVES ✦</p>
+          <h2>Dos Games aos Reacts</h2>
+          <p class="subtitle">
+            É sobre tudo o que nos faz continuar aqui! Seja jogando, reagindo, cantando,
+            conversando ou apenas sendo você... cada live é um novo motivo para sorrir.
+          </p>
+        </div>
+
+        <div class="universe-grid">
+          <!-- 4 Pilares das Lives -->
+          <div class="stream-pillars">
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">🎮</div>
+              <h3>Games</h3>
+              <p>Rage, vitória duvidosa, perda de sanidade ao vivo e muita diversão.</p>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">▶️</div>
+              <h3>Reacts</h3>
+              <p>Vídeos, memes, absurdos da internet e momentos que viram piada interna.</p>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">🎤</div>
+              <h3>Karaokê</h3>
+              <p>Porque a voz desse anjinho também é um superpoder celestial.</p>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">💬</div>
+              <h3>Just Chatting</h3>
+              <p>Desabafos, ideias malucas, fofocas e horas seguidas de risada.</p>
+            </article>
+          </div>
+
+          <!-- Painel inspirado diretamente no Carrd: !gosto e !Nao gosto -->
+          <aside class="carrd-commands-box">
+            <div class="commands-header">
+              <span>★ FICHA OFICIAL DO ANJINHO</span>
+              <small>bysunshiny.carrd.co</small>
+            </div>
+
+            <p class="commands-subtitle">Coisas que iluminam o coração da Sunshiny:</p>
+            <div class="likes-tags">
+              <span class="like-tag">🎨 Arte</span>
+              <span class="like-tag">🎮 Jogos</span>
+              <span class="like-tag">🐾 Animais</span>
+              <span class="like-tag">🌿 Plantas</span>
+              <span class="like-tag">⭐ Estrelas</span>
+              <span class="like-tag">🍬 Doces</span>
+            </div>
+
+            <div class="command-terminal">
+              <div class="cmd-row cmd-like">
+                <strong>!gosto:</strong> arte, jogos, animais, plantas, estrelas, doces e
+                <em>principalmente fazer as pessoas sorrirem!</em> ♡
+              </div>
+              <div class="cmd-row cmd-dislike">
+                <strong>!Nao gosto:</strong> de quem não dá like e se inscreve dps de rir das suas piadas :(
+              </div>
+            </div>
+
+            <div class="like-check-box">
+              <button type="button" class="button primary full-width" id="btn-gave-like">
+                👍 Eu já dei like e me inscrevi depois de rir!
+              </button>
+              <p class="like-feedback" id="like-feedback" aria-live="polite" hidden></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ================= UMA CARTA PARA VOCÊ (AMOR & CARINHO) ================= -->
+      <section class="section letter-section" id="carta">
+        <div class="letter-deco" aria-hidden="true">✧ ♡ ☼ ♡ ✧</div>
+
+        <div class="letter-layout">
+          <article class="letter">
+            <p class="eyebrow">✉️ UMA CARTA PARA VOCÊ... DO LADO DE CÁ DA TELA</p>
+            <h2>Para a nossa querida BySunshiny,</h2>
+
+            <p>
+              Dois anos podem parecer pouco quando pensamos em tudo o que ainda existe para viver,
+              mas são tempo suficiente para criar lembranças que guardaremos para sempre com carinho.
+            </p>
+
+            <p>
+              Por trás de cada live, de cada risada inesperada, de cada momento caótico e de cada
+              piada que provavelmente deveria ter sido proibida pela Convenção de Genebra, existe algo
+              muito especial: <strong>a capacidade de reunir pessoas e tornar seus dias um pouquinho melhores.</strong>
+            </p>
+
+            <p>
+              Talvez você nem sempre perceba o impacto que tem, mas sua presença pode significar
+              muito para alguém que precisava justamente de um motivo para sorrir naquele dia.
+            </p>
+
+            <p>
+              E é por isso que hoje não celebramos apenas dois anos de canal. Celebramos as
+              experiências compartilhadas, as amizades que surgiram no chat, as memórias construídas
+              e todo o carinho que existe nessa comunidade.
+            </p>
+
+            <p>
+              Que venham muitos outros anos de aventuras, conquistas, gargalhadas e momentos
+              inesquecíveis. Que você continue brilhando do seu próprio jeito — sem precisar ser
+              perfeita, sem precisar ser outra pessoa e sem perder aquilo que torna sua presença tão única.
+            </p>
+
+            <p class="letter-thanks">
+              Obrigada por esses dois anos. Que seu caminho continue iluminado, nosso anjinho. ♡
+            </p>
+
+            <p class="letter-sign">
+              Com muito carinho,<br>
+              <strong>da sua comunidade e de todos que fazem parte dessa jornada ♡</strong>
+            </p>
+
+            <div class="letter-stamp" aria-hidden="true">
+              APROVADO<br>PELO CÉU ✦
+            </div>
+          </article>
+
+          <!-- Post-its de carinho laterais -->
+          <aside class="sticky-notes" aria-label="Bilhetes de carinho da comunidade">
+            <div class="sticky-note note-gold">
+              <span class="sticky-pin" aria-hidden="true">★</span>
+              <p>“Você faz tudo ficar mais brilhante!”</p>
+              <small>— Nota oficial do chat ☼</small>
+            </div>
+
+            <div class="sticky-note note-pink">
+              <span class="sticky-pin" aria-hidden="true">♡</span>
+              <p>“Você faz a diferença na vida de muita gente!”</p>
+              <small>— Com amor, seus humanos ♡</small>
+            </div>
+
+            <div class="sticky-note note-lilac">
+              <span class="sticky-pin" aria-hidden="true">✦</span>
+              <p>“Continue sendo esse anjinho de auréola duvidosa e coração gigante!”</p>
+              <small>— 2 Anos de Sol &amp; Caos</small>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ================= BÊNÇÃO FINAL & REDES DO CARRD ================= -->
+      <section class="section blessing" id="bencao">
+        <div class="big-star" aria-hidden="true">✦</div>
+        <p class="eyebrow">DECRETO CELESTIAL Nº 002 • QUE VENHAM MUITOS ANOS DE CAOS, AMOR E CONQUISTAS</p>
+
+        <div class="blessing-frame">
+          <div class="blessing-halo" aria-hidden="true"></div>
+
+          <h2>★ BÊNÇÃO CELESTIAL CONCEDIDA! ★</h2>
+
+          <p>
+            Que nunca faltem motivos para sorrir, pessoas para compartilhar momentos especiais
+            e oportunidades para realizar todos os seus sonhos. E que os próximos anos sejam
+            repletos de felicidade, conquistas e muito amor.
+          </p>
+
+          <p class="blessing-joke">
+            E que a <strong>BySunshiny</strong> continue sendo a responsável por pelo menos
+            <span class="highlight-gold">73% dos danos cerebrais da comunidade</span>.<br>
+            <small>Os outros 27% são culpa do chat. ♡</small>
+          </p>
+
+          <div class="blessing-seal" id="blessing-seal" title="Clique para espalhar brilho celestial!">
+            <span class="seal-sun">☼</span>
+            <span class="seal-number">2</span>
+            <small>ANOS DE CAOS CELESTIAL</small>
+          </div>
+
+          <p class="final-line">
+            Feliz segundo aniversário de canal, BySunshiny! <span>♡</span>
+          </p>
+
+          <div class="blessing-actions">
+            <button type="button" class="button primary" id="celebrate-btn">
+              ✨ Receber Bênção &amp; Soltar Purpurina Celestial ✨
+            </button>
+            <a class="button ghost" href="#inicio">
+              Voltar ao topo ↑
+            </a>
+          </div>
+        </div>
+
+        <!-- Redes Sociais Oficiais (extraídas do bysunshiny.carrd.co) -->
+        <div class="socials-panel">
+          <p class="socials-title">✦ ACOMPANHE O ANJINHO EM TODAS AS REDES (LIVES TODA SEMANA!) ✦</p>
+          <div class="socials-grid">
+            <a class="social-btn livepix" href="https://livepix.gg/bysunshiny" target="_blank" rel="noopener">
+              <span>★</span> LIVEPIX
+            </a>
+            <a class="social-btn youtube" href="https://www.youtube.com/@BySunshiny" target="_blank" rel="noopener">
+              <span>▶</span> YOUTUBE
+            </a>
+            <a class="social-btn twitch" href="https://www.twitch.tv/bysunshiny/about" target="_blank" rel="noopener">
+              <span>💜</span> TWITCH
+            </a>
+            <a class="social-btn tiktok" href="https://www.tiktok.com/@bysunshiny" target="_blank" rel="noopener">
+              <span>♪</span> TIKTOK
+            </a>
+            <a class="social-btn instagram" href="https://www.instagram.com/bysunshiny/" target="_blank" rel="noopener">
+              <span>📸</span> INSTAGRAM
+            </a>
+            <a class="social-btn twitter" href="https://x.com/BySunshiny" target="_blank" rel="noopener">
+              <span>𝕏</span> TWITTER / X
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>☼ BYSUNSHINY • 2 ANOS DE LUZ, CARINHO &amp; CAOS CELESTIAL ✦ MUITO MAIS POR VIR!</span>
+      <a href="https://bysunshiny.carrd.co/" target="_blank" rel="noopener">
+        Visitar o Carrd Oficial (bysunshiny.carrd.co) ↗
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

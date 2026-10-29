@@ -1,0 +1,15 @@
+BYSUNSHINY — 2 ANOS DE CAOS CELESTIAL (VERSÃO 3 ATUALIZADA)
+
+COMO ABRIR
+1. Extraia o arquivo ZIP (se aplicável).
+2. Abra a pasta by-sunshiny-2-anos-v3 no VS Code.
+3. Abra index.html no navegador ou use a extensão Live Server.
+
+ARQUIVOS
+- index.html: dividido em duas páginas/telas interativas:
+  1) Página 1 (Menu dos Portões do Paraíso): apresenta o modelo 3D original de corpo inteiro da BySunshiny diante dos Portões Dourados do Paraíso, atalhos das seções, botão de silenciar música e o botão "★ Abrir os portões do paraíso →".
+  2) Página 2 (Página Inicial Completa): revelada quando os portões se abrem em 3D com feixe de luz celestial, trazendo a saudação inicial com o busto 3D original da BySunshiny, Sistema de Anjinho, player "You Are My Sunshine", O Caos Celestial, Dos Games aos Reacts + Ficha do Carrd, Carta da Comunidade e Bênção Final + Redes Oficiais.
+- style.css: visual responsivo com a animação 3D de abertura dos portões (.gate-left / .gate-right com rotateY), feixe de luz divina e paleta celestial/rosa-choque/dourada.
+- script.js: controle da abertura/fechamento dos Portões do Paraíso, áudio automático com botão de silenciar sincronizado nas duas páginas e interações de humor/carinho.
+- assets/sunshiny-vtuber.png e assets/sunshiny-3d-full.png: recortes em PNG transparente extraídos diretamente do modelo 3D original da BySunshiny (sem uso de IA).
+- assets/you-are-my-sunshine.mp3: música tema tocada ao entrar no site.
